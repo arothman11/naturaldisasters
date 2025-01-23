@@ -23,7 +23,7 @@ We want to acknowledge systemic disparities in infrastructure, often tied to hou
 ### 2. Define: Sourcing & Preparing Data
 
 We used data from FEMA's [Disaster Declarations Summaries](https://www.fema.gov/openfema-data-page/disaster-declarations-summaries-v2), which includes disaster records from 1953 to 2021 (around 60,000 entries).  
-During data cleanup, unnecessary data points like the "biological" disaster type (focused on epidemics) were omitted, as they fall outside the scope of this project.
+During data cleanup, unnecessary data points like the "biological" disaster type (focused on epidemics) were omitted, as they fall outside this project's scope.
 
 ---
 
@@ -42,7 +42,7 @@ The final design draft was created using Adobe XD:
 
 ### 4. Prototype: Building the Visualization
 
-The prototype was built in JavaScript using the D3.js library.  
+The prototype was built in JavaScript using the D3.js library. The state outline geometries were sourced from Leaflet.
 
 **Prototype 1:**  
 ![Prototype 1](data/Milestone2.png)
@@ -69,11 +69,12 @@ Our final visualization includes several interactive elements:
    - Click "Compare County" to view another county's data side-by-side, with the same interactive features available.  
 
 4. **Year Brushing**  
-   - Adjust the year range to display the most common disasters for each county within the selected time frame. Example:  
+   - Adjust the year range to display the most common disasters for each county within the selected time frame.
+   - Example:  
      ![Brushing](data/brushedyears.png)  
 
 5. **Interactive Legend**  
-   - Click on a disaster type in the legend to display its spread across the country.  
+   - Click on a disaster type in the legend to display only that specific disaster spread. 
    - Example legend items:  
 
    <img src="data/legendfire.png" alt="Fire" style="width: 300px; margin: 10px;">  
@@ -96,4 +97,4 @@ Our final visualization includes several interactive elements:
 **External Files:**  
 1. `DisasterDeclarationsSummaries.json`: FEMA natural disaster data.  
 2. `geojson-counties-fips.json`: County geometries (source: Plotly Datasets).  
-3. `StatesData.js`: State outline geometries (source: Leaflet.io).  
+3. `StatesData.js`: State outline geometries (source: Leaflet.js).  
