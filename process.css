@@ -1,0 +1,14 @@
+body{
+    padding: 5%;
+    font-family: 'Open Sans Condensed', sans-serif !important;
+    background-color: white;
+}
+
+h1{
+    font-size: 45px;
+}
+
+table{
+    border: 1px solid black;
+}
+

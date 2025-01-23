@@ -1,0 +1,339 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    min-width: fit-content;
+    min-height:max-content;
+    font-family: 'Open Sans Condensed', sans-serif !important;
+    background-color: white !important;
+    bottom: 0px;
+}
+
+#contents, .grid{
+    height: 100%;
+}
+
+#mapVis{
+    height: 100%;
+    width: 110%;
+    z-index: 0;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.countyLoad{
+  border: 14px solid #f3f3f3; /* Light grey */
+  border-top: 14px solid #4a4d4e; /* Blue */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-left: 30%;
+  margin-top: 90px;
+  position: absolute;
+  animation: spin 2s linear infinite;
+}
+
+#mapVis .countyLoad{
+    margin-left: 60%;
+    margin-top: 15%;
+}
+
+#load{
+    margin-top: 10%;
+    margin-left: 37%;
+    width:20%;
+    height:35%;
+    position:fixed;
+    z-index:9999;
+    background:url("../data/loader.gif") no-repeat center center rgba(0,0,0,0.25)
+}
+.popupBar{
+    height: 100%;
+    width: 350px;
+    z-index: 2;
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#directions{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#yearChart{
+    /* background-color: lightskyblue; */
+    padding-top: 30px;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+.popupText{
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+.fas{
+    font-size:12px;
+}
+
+/* 
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 65%;
+    grid-gap: 50px 20px;
+} */
+
+.search {
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 0px;
+    margin-left: 10px;
+    padding: 2px 2px 2px 10px;
+    outline: 0;
+    font-size: 18px;
+    width: 90%;
+}
+
+  #search{
+      /* width: 90%; */
+      /* height: 30px; */
+      /* margin: 10px; */
+      /* border-radius: 5px; */
+      padding-left: 5px;
+      font-size: 18px;
+  }
+  
+.leaflet-control-container { position: absolute; right: 56px }
+
+
+#legend{
+    height: 140px;
+    width: 230px;
+    z-index: 8;
+    float: right;
+    position: absolute;
+    padding-top: 1%;
+    fill: white;
+    bottom: 10%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-left: 83%;
+    margin-top: 85%;
+}
+
+/* #legend svg{
+    overflow: overlay;
+} */
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40% !important; 
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #compareButton{
+      border-radius: 15px;
+      border: 0px;
+      margin-top: 3px;
+      background-color: rgb(184, 184, 184);
+      margin-left: 25%;
+      display: none;
+  }
+
+  #compareBar{
+      display: none;
+      padding-top: 1%;
+      padding-left: 1%;
+      padding-right: 1%;
+      margin-left: 350px;
+      background-color: rgba(0, 0, 0, 0.616);
+  }
+
+  #compareSearch{
+      margin-top: 20px;
+  }
+
+  #compareLoad{
+      visibility: hidden;
+  }
+
+  #closeCompare{
+      float: right;
+      padding-right: 2%;
+      font-weight: bold;
+      font-size: 18px;
+      cursor: pointer;
+  }
+
+  #showingYears{
+      margin-left: 5%;
+      margin-bottom: 0px;
+      font-size: 18px;
+  }
+
+
+  .slideIn{
+    position: absolute;
+    left: -350px;
+    /* -webkit-animation: slide 0.5s forwards; */
+    animation: slideIn 0.5s forwards;
+  }
+
+
+  @keyframes slideIn {
+    100% { left: 0; }
+}
+
+.slideOut{
+    position: absolute;
+    left: 0;
+    /* -webkit-animation: slide 0.5s forwards; */
+    animation: slideOut 0.5s forwards;
+  }
+
+
+  @keyframes slideOut {
+    100% { left: -350px; }
+}
+
+
+#i{
+    display: inline;
+}
+
+#links{
+    left: 30%;
+    position: relative;
+    bottom: 2%;
+    width: 350px;
+}
+
+#processbook{
+    margin-left: 5%;
+}
+
+#links a{
+    font-size: 12px;
+    color: rgb(206, 206, 206);
+    text-decoration: underline;
+}
+
+.tooltip{
+    z-index: 10;
+    background-color:white;
+}
+
+
+#popupModal{
+    position: fixed;
+}
+
+.modal-content{
+    position: fixed;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.modal-dialog {
+    overflow-y: initial!important
+ }
+ .modal-body {
+    height: 50vh;
+ }
+
+ .modal-open .modal {
+    overflow-y: hidden!important;
+}
+
+table {
+    border:none;
+    border-collapse: collapse;
+    
+}
+
+table td {
+    border-bottom: 1px solid lightgrey;
+    padding-left: 15px;
+}
+
+table td:first-child {
+    border-left: none;
+}
+
+table td:last-child {
+    border-right: none;
+}
+
+thead{
+    border-bottom: 1px solid lightgrey;;
+}
+
+#fema{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+
+.HIGHLIGHTED{
+    fill: white;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.clickOption{
+    cursor: pointer;
+}
+
+div.tooltip-riskScore {
+    position: absolute;
+    text-align: center;
+    padding: .5rem;
+    background: #FFFFFF;
+    color: #313639;
+    border: 1px solid #313639;
+    border-radius: 8px;
+    pointer-events: none;
+    font-size: 1.3rem;
+}
+
+#popupHeader{
+    text-align: center;
+}
+table{
+    text-align: center;
+}
+
+.marker{
+    filter: hue-rotate(120deg);
+}
