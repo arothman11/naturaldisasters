@@ -14,9 +14,9 @@ This map serves as a tool for people planning a move, helping them assess how pr
 
 Climate change data is often purely informational rather than actionable, which can lead to fear-mongering. Our goal was to present this data in a way that encourages informed decision-making.  
 
-We aimed to address systemic disparities in infrastructure, often tied to housing and environmental injustice, which leave marginalized communities disproportionately affected by natural disasters. These impacts include weaker infrastructure, limited recovery resources, and placement in areas more vulnerable to environmental hazards.  
+By visualizing the increasing frequency of natural disasters across the country, we hope to provide insights that empower people to make decisions while offering an engaging and educational resource for those curious about disaster history. 
 
-By visualizing the increasing frequency of natural disasters across the country, we hope to provide insights that empower people to make decisions while offering an engaging and educational resource for those curious about disaster history.  
+We want to acknowledge systemic disparities in infrastructure, often tied to housing and environmental injustice, which leave marginalized communities disproportionately affected by natural disasters. These impacts include weaker infrastructure, limited recovery resources, and placement in areas more vulnerable to environmental hazards.  
 
 ---
 
