@@ -1,7 +1,5 @@
 # So You Wanna Live Here?
 
-This project is a natural disaster visualization created in collaboration with two other students.
-
 To run this project, clone the repository onto your local setup and open index.html on your local server. 
 
 ---
